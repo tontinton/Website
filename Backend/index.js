@@ -9,7 +9,7 @@ let port = process.env.PORT || 1234;
 
 app.get('/', function (req, res, next) {
     try {
-        res.sendfile(__dirname + '/../Frontend/index.html')
+        res.sendfile(__dirname + '/../index.html')
     } catch (e) {
         next(e)
     }
